@@ -1,0 +1,20 @@
+/*==============================
+            SECTION 2
+==============================*/
+#section2 {
+  font-family: 'Nunito';
+  position: relative;
+  background: url("../media/global/background_mc.png");
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position-y: -110px;
+  /* this is to stop collapsing margins */
+  padding-top: 1px;
+  margin-top: -1px;
+
+  //COMMON STYLING
+  user-select: none;
+
+
+//END SECTION 1
+}

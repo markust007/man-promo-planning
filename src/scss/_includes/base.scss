@@ -1,0 +1,132 @@
+html, body {
+  font-size: 16px;
+	font-family: 'Nunito', Arial, Helvetica, sans-serif;
+  background: $background;
+  margin: 0;
+  padding: 0;
+  text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  @media only screen and (orientation: portrait) {
+    background: rgba(50, 50, 50, .99);
+  }
+}
+
+h1 {
+  font-family: 'Nunito', Arial, Helvetica, sans-serif;
+  font-size: 28px;
+}
+h2 {
+  font-family: 'Nunito', Arial, Helvetica, sans-serif;
+  font-size: 24px;
+}
+h3 {
+  font-family: 'Nunito', Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+#app {
+  position: relative;
+  width: $phone-width;
+  height: $phone-height;
+  margin: 0 auto;
+  overflow: hidden;
+}
+@media (orientation: portrait) {
+  #app {
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+  }}
+
+.container {
+  max-width: $phone-width;
+  margin: 0 auto;
+}
+section, .page1, .page2, .page3, .page4, .page5, .page6 {
+  width: $phone-width;
+  height: $phone-height;
+}
+
+.fa-spin {
+  position: fixed;
+  z-index: 1000;
+  font-size: 6rem;
+  color: $black;
+  left: calc(50% - 3rem);
+  margin-top: 25%;
+}
+.fade-enter-active, .fade-leave-active {
+  transition: opacity .5s
+}
+.fade-enter, .fade-leave-to {
+  opacity: 0
+}
+
+/*================================================
+              BOILERPLATE
+=================================================*/
+
+/*
+ * Remove text-shadow in selection highlight:
+ * https://twitter.com/miketaylr/status/12228805301
+ *
+ * These selection rule sets have to be separate.
+ */
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+/*
+ * Remove the gap between audio, canvas, iframes,
+ * images, videos and the bottom of their containers:
+ * https://github.com/h5bp/html5-boilerplate/issues/440
+ */
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+    vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+    resize: vertical;
+}

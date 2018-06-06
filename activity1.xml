@@ -1,0 +1,1015 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module>
+    <!-- *********************** module 1 ************************* -->
+    
+    <!-- OPEN WITH NAV JUMPER -->
+    
+    <scenario id="Process NavJumper-Menu" nodeNum="01" classID="NavJumper" frame="1">
+        
+        <constants>
+            <startHere><![CDATA[start here]]></startHere>
+            <mainTitle><![CDATA[OUR PROCESS]]></mainTitle>
+        </constants>
+        
+        <title><![CDATA[Traditional Selling Channels]]></title>
+        <bodyText><![CDATA[In the not-so-distant past, customers had their orders handled by only one channel. They had only one source to search, purchase, and return or exchange products. Take a moment to explore each of these selling channels. <br><br>Click IN-STORE to explore it. You must review all channels before moving forward.]]></bodyText>
+        <bodyText><![CDATA[In the not-so-distant past, customers had their orders handled by only one channel. They had only one source to search, purchase, and return or exchange products. Take a moment to explore each of these selling channels. <br><br>Click CATALOG to explore it. You must review all channels before moving forward.]]></bodyText>
+        <bodyText><![CDATA[In the not-so-distant past, customers had their orders handled by only one channel. They had only one source to search, purchase, and return or exchange products. Take a moment to explore each of these selling channels. <br><br>Click ONLINE to explore it. You must review all channels before moving forward.]]></bodyText>
+        <bodyText><![CDATA[In the not-so-distant past, customers had their orders handled by only one channel. They had only one source to search, purchase, and return or exchange products. Take a moment to explore each of these selling channels. <br><br>Click any channel to review it or click CONTINUE.]]></bodyText>
+        <button>
+            <text><![CDATA[CONTINUE]]></text>
+            <type><![CDATA[nextModule]]></type>
+            <url><![CDATA[13]]></url>
+        </button>
+        <button>
+            <text><![CDATA[BACK]]></text>
+            <type><![CDATA[back]]></type>
+            <url><![CDATA[1]]></url>
+        </button>
+        
+        <instructions><![CDATA[Click the steps below to review them.]]></instructions>
+        
+        
+        <processes>
+            
+            <process>
+                <name><![CDATA[IN-STORE]]></name>
+                <q>
+                    <forwardToThisNode><![CDATA[2]]></forwardToThisNode>
+                </q>
+            </process>
+            <process>
+                <name><![CDATA[CATALOG]]></name>
+                <q>
+                    <forwardToThisNode><![CDATA[6]]></forwardToThisNode>
+                </q>
+            </process>
+            <process>
+                <name><![CDATA[ONLINE]]></name>
+                <q>
+                    <forwardToThisNode><![CDATA[10]]></forwardToThisNode>
+                </q>
+            </process>
+            
+        </processes>
+        
+    </scenario>
+
+    
+    
+    <scenario id="Basics: P2" nodeNum="02" classID="SimpleImageText" frame="18">
+        <title><![CDATA[In-Store]]></title>
+        <button>
+            <text><![CDATA[CONTINUE]]></text>
+            <type><![CDATA[continue]]></type>
+            <url><![CDATA[1]]></url>
+        </button>
+        <button>
+            <text><![CDATA[BACK]]></text>
+            <type><![CDATA[back]]></type>
+            <url><![CDATA[1]]></url>
+        </button><bodyText><![CDATA[Welcome to a Fashion, Inc. retail store! We have stores that are freestanding, in shopping malls, and even in airports. Each looks similar, but has slight modifications based on location and the amount and variety of items it carries. So, how do all these products get into one of our stores?<br><br>]]></bodyText>
+        <anim><![CDATA[]]></anim><dragItems/>
+    </scenario>
+
+    
+    
+    
+        <scenario id="Basics: Multi Phase 1a" nodeNum="03" classID="SupplyBuild" frame="1">
+           
+            <title><![CDATA[Selling Channels: In-Store ]]></title>
+        <bodyText><![CDATA[Welcome to a Fashion, Inc. retail store! We have stores that are freestanding, in shopping malls, and even in airports. Each looks similar, but has slight modifications based on location and the amount and variety of items it carries. So, how do all these products get into one of our stores?<br><br>]]></bodyText>
+        <button>
+            <text><![CDATA[CONTINUE]]></text>
+            <type><![CDATA[continue]]></type>
+            <url><![CDATA[1]]></url>
+        </button>
+        <button>
+            <text><![CDATA[BACK]]></text>
+            <type><![CDATA[back]]></type>
+            <url><![CDATA[1]]></url>
+        </button>
+        <instruct><![CDATA[Answer the question below.]]></instruct>
+        <constants>
+            <fbTitle><![CDATA[<b>Feedback</b>]]></fbTitle>
+            <retryTxt><![CDATA[<b>RETRY</b>]]></retryTxt>
+            <continueTxt><![CDATA[<b>CONTINUE</b>]]></continueTxt>
+        </constants>
+        
+        <scenes>
+            <text><![CDATA[It all starts with our buyers and planners in New York, Miami, Paris and Milan. They watch upcoming fashion trends and figure out what they want <br>Fashion, Inc. to sell, when we should sell it, and the price and margin for which they believe we are able to sell a product. In the long run, they determine how much Fashion, Inc. orders from our vendors and how much inventory goes to each store.]]></text>
+            <ques><![CDATA[Which of the following criteria do you think is evaluated in determining the amount to order for each store? ]]></ques>
+            <opts>
+                <correct>4</correct>
+                <text><![CDATA[Customer demographics]]></text>
+                <fb><![CDATA[Local customer demographics are an important part of the ordering equation. However, other criteria also play an important role in determining the amount to order for a particular store. Please try again.]]></fb>
+
+                <text><![CDATA[Store size]]></text>
+                <fb><![CDATA[Store size definitely impacts how much inventory the store can have. However, other criteria also play an important role in determining the amount to order for a particular store. Please try again.]]></fb>
+
+                <text><![CDATA[Store location]]></text>
+                <fb><![CDATA[Store location such as urban vs. suburban or north vs. south, also impact how much inventory the store should have. However, other criteria also play an important role in determining the amount to order for a particular store. Please try again. ]]></fb>
+
+                <text><![CDATA[All of these criteria]]></text>
+                <fb><![CDATA[Correct! Retailers use many criteria to try to get the right amount of the right product in the right store location. They use customer demographics, store size, and location.]]></fb>
+            </opts>
+        </scenes>
+        
+        
+
+
+        <review>
+            <text><![CDATA[ ]]></text>
+
+
+        </review><dragItems/>
+        </scenario>
+    
+    
+    
+    <scenario id="Basics: Multi Phase 1b" nodeNum="04" classID="SupplyBuild" frame="2">
+        <title><![CDATA[Selling Channels: In-Store ]]></title>
+        <bodyText><![CDATA[Welcome to a Fashion, Inc. retail store! We have stores that are freestanding, in shopping malls, and even in airports. Each looks similar, but has slight modifications based on location and the amount and variety of items it carries. So, how do all these products get into one of our stores?<br><br>]]></bodyText>
+        <button>
+            <text><![CDATA[CONTINUE]]></text>
+            <type><![CDATA[continue]]></type>
+            <url><![CDATA[1]]></url>
+        </button>
+        <button>
+            <text><![CDATA[BACK]]></text>
+            <type><![CDATA[back]]></type>
+            <url><![CDATA[1]]></url>
+        </button>
+        <instruct><![CDATA[Answer the question below.]]></instruct>
+        <constants>
+            <fbTitle><![CDATA[<b>Feedback</b>]]></fbTitle>
+            <retryTxt><![CDATA[<b>RETRY</b>]]></retryTxt>
+            <continueTxt><![CDATA[<b>CONTINUE</b>]]></continueTxt>
+        </constants>
+        
+        
+        <scenes>
+            <text><![CDATA[Once the planners figure out the amount to order for each store, the item is shipped and the local store is in charge of selling it.<br><br>If the item is selling well and inventory is available, the store may try to get more from the distribution center to take advantage of the hot selling items. ]]></text>
+            <ques><![CDATA[What do you think happens when the inventory is NOT selling well?]]></ques>
+            <opts>
+                <correct>2</correct>
+                <text><![CDATA[The store raises the price to make the customer believe it is the hot new item.]]></text>
+                <fb><![CDATA[No, that’s not it. Customers know what they like as well as the overall value of these items. Please try again.]]></fb>
+
+                <text><![CDATA[The store begins to markdown the price of the inventory to sell it.]]></text>
+                <fb><![CDATA[Right! When inventory isn’t selling well, stores typically begin the markdown process. Eventually, any leftover inventory is sold at ‘clearance’ prices or may be shipped from the store to be sold at an outlet. ]]></fb>
+
+                <text><![CDATA[The inventory is moved to the front of the store to showcase the items.]]></text>
+                <fb><![CDATA[Incorrect. No matter where the items are located, customers know what they like and what they don’t like. This doesn’t help the store sell more. Please try again.]]></fb>
+
+                
+                
+            </opts>
+
+        </scenes>
+        
+
+
+        <review>
+            <text><![CDATA[That covers the basic information for the in-store channel of consumer buying, but we’ll need to cover a few more important elements. Click Continue to learn more.]]></text>
+
+
+        </review><dragItems/>
+    </scenario>
+    
+    
+    <scenario id="Basics: Multi Phase 1c" nodeNum="05" classID="SupplyBuild" frame="3">
+       
+        <finalNode><![CDATA[Yes]]></finalNode>
+        <title><![CDATA[Selling Channels: In-Store ]]></title>
+        <bodyText><![CDATA[Welcome to a Fashion, Inc. retail store! We have stores that are freestanding, in shopping malls, and even in airports. Each looks similar, but has slight modifications based on location and the amount and variety of items it carries. So, how do all these products get into one of our stores?<br><br>]]></bodyText>
+        <button>
+            <text><![CDATA[CONTINUE]]></text>
+            <type><![CDATA[continue]]></type>
+            <url><![CDATA[1]]></url>
+        </button>
+        <button>
+            <text><![CDATA[BACK]]></text>
+            <type><![CDATA[back]]></type>
+            <url><![CDATA[1]]></url>
+        </button>
+        <instruct><![CDATA[Answer the question below.]]></instruct>
+        <constants>
+            <fbTitle><![CDATA[<b>Feedback</b>]]></fbTitle>
+            <retryTxt><![CDATA[<b>RETRY</b>]]></retryTxt>
+            <continueTxt><![CDATA[<b>CONTINUE</b>]]></continueTxt>
+        </constants>
+        
+        
+        
+        <scenes>
+            <text><![CDATA[Most of our customers shop at our Fashion, Inc. retail stores, but physical stores can have limitations. <br><br>Retail stores serve customers who live in their local markets and who come to those stores. Some of our stores are large, like flagships, but others are small. The smaller stores can’t carry all of the products we have available due to their size.<br><br>Another issue often faced is when a local market may not like a certain product (think sweaters in South Florida), or the local market gets really excited about a certain product.]]></text>
+            <ques><![CDATA[What do you think is the downside of a local market getting really excited about a particular product?]]></ques>
+            <opts>
+                <correct>2</correct>
+                <text><![CDATA[No parking spaces at the mall]]></text>
+                <fb><![CDATA[Although this may be the result of a high demand product, this hasn’t caused the store any issues. Please try again. ]]></fb>
+
+                <text><![CDATA[Store is out of stock]]></text>
+                <fb><![CDATA[Yes, although it is good for the retailer to sell all of their items, the retailer also disappoints customers when they run out of stock. This results in lost sales that they could have made, especially if inventory was available in the retailer’s network. This can also cause customer loyalty issues if customers make a purchase from another retailer. ]]></fb>
+
+                <text><![CDATA[Increased traffic]]></text>
+                <fb><![CDATA[While this may be a result of local market getting excited about a product, it is not the main impact. Also, the customers will often leave disappointed if the product they wanted is not in stock. Try again.]]></fb>
+
+                <text><![CDATA[Higher profit]]></text>
+                <fb><![CDATA[Sure, sales are great for the bottom line, but if we don't have extra product to sell, how can we make any higher profits? Try again.]]></fb>
+            </opts>
+
+
+
+        </scenes>
+
+
+        <review>
+            <text><![CDATA[That covers the basic information for the in-store channel of consumer buying, but we’ll need to cover a few more important elements. Click Continue to learn more.]]></text>
+
+
+        </review><dragItems/>
+    </scenario>
+    
+    <scenario id="Basics: P3" nodeNum="06" classID="SimpleImageText" frame="22">
+        <firstNode><![CDATA[Yes]]></firstNode>
+        <title><![CDATA[Catalog]]></title>
+        <bodyText><![CDATA[Like many other retailers, Fashion, Inc. still has a lot of customers placing orders from catalogs delivered in the mail.]]></bodyText>
+        <button>
+            <text><![CDATA[CONTINUE]]></text>
+            <type><![CDATA[continue]]></type>
+            <url><![CDATA[1]]></url>
+        </button>
+        <button>
+            <text><![CDATA[BACK]]></text>
+            <type><![CDATA[back]]></type>
+            <url><![CDATA[1]]></url>
+        </button>
+        <anim><![CDATA[]]></anim><dragItems/>
+    </scenario>
+    
+    
+    <scenario id="Basics: Multi Phase 2a" nodeNum="07" classID="SupplyBuild" frame="4">
+        
+        <title><![CDATA[Selling Channels: Catalog ]]></title>
+        <bodyText><![CDATA[Like many other retailers, Fashion, Inc. still has a lot of customers placing orders from catalogs delivered in the mail. ]]></bodyText>
+        <button>
+            <text><![CDATA[CONTINUE]]></text>
+            <type><![CDATA[continue]]></type>
+            <url><![CDATA[]]></url>
+        </button>
+        <button>
+            <text><![CDATA[BACK]]></text>
+            <type><![CDATA[back]]></type>
+            <url><![CDATA[1]]></url>
+        </button>
+        
+        <instruct><![CDATA[Answer the question below.]]></instruct>
+        <constants>
+            <fbTitle><![CDATA[<b>Feedback</b>]]></fbTitle>
+            <retryTxt><![CDATA[<b>RETRY</b>]]></retryTxt>
+            <continueTxt><![CDATA[<b>CONTINUE</b>]]></continueTxt>
+        </constants>
+        <scenes>
+            <text><![CDATA[Like the retail channel, the planners figure out the products to sell via catalog, the price at which to sell, and the number of items they believe will sell. Then, they place the order from the vendors and get the product into the distribution center. The catalogs are mailed to customers on our mailing list, and we wait for the orders to start to come in – by either phone or mail.<br><br>Although it's a productive channel, it is not without its challenges. Catalog orders make it difficult to track and predict the demand of a product. ]]></text>
+            <ques><![CDATA[Traditionally, what happens when a customer doesn’t like the product he or she ordered from a catalog? ]]></ques>
+            <opts>
+                <correct>2</correct>
+                <text><![CDATA[The customer puts the item in his/her closet and never uses it.]]></text>
+                <fb><![CDATA[Consumers may put the item up and forget about it. While that may be good for the retailer, it doesn't provide the consumer with a good experience. A clear and easy exchange for catalog (and web) purchases would provide a better experience. Consider what the consumer might do if they want to exchange the item.]]></fb>
+
+                <text><![CDATA[The customer ships the items back to the retailer for a return or exchange.]]></text>
+                <fb><![CDATA[Traditionally, when consumers want to return or exchange something they purchased from a catalog, they must ship the product back to the distribution center. Later, we'll discuss how this process is changing to be more convenient for consumers.]]></fb>
+
+                <text><![CDATA[The customer takes the product into the store.]]></text>
+                <fb><![CDATA[Sure, this might be an acceptable practice if the network is optimized for order management. However, with single channel processing, the customer has no option to return the product to the store. ]]></fb>
+
+                
+                
+            </opts>
+        </scenes>
+        
+        
+
+
+        <review>
+            <text><![CDATA[]]></text>
+
+
+        </review><dragItems/>
+    </scenario>
+    
+    
+    
+    <scenario id="Basics: Multi Phase 2b" nodeNum="08" classID="SupplyBuild" frame="5">
+        <title><![CDATA[Selling Channels: Catalog ]]></title>
+        <bodyText><![CDATA[Like many other retailers, Fashion, Inc. still has a lot of customers placing orders from catalogs delivered in the mail.]]></bodyText>
+        <button>
+            <text><![CDATA[CONTINUE]]></text>
+            <type><![CDATA[continue]]></type>
+            <url><![CDATA[]]></url>
+        </button>
+        <button>
+            <text><![CDATA[BACK]]></text>
+            <type><![CDATA[back]]></type>
+            <url><![CDATA[1]]></url>
+        </button>
+        
+        <instruct><![CDATA[Answer the question below.]]></instruct>
+        <constants>
+            <fbTitle><![CDATA[<b>Feedback</b>]]></fbTitle>
+            <retryTxt><![CDATA[<b>RETRY</b>]]></retryTxt>
+            <continueTxt><![CDATA[<b>CONTINUE</b>]]></continueTxt>
+        </constants>
+        
+        <scenes>
+            <text><![CDATA[Like other channels, the catalog order channel is subject to customer demand. When products are in high demand, the catalog may lose sales by not having enough inventory in the distribution center. ]]></text>
+            <ques><![CDATA[When products are not selling through the catalog, do you think it is possible to offer markdowns?]]></ques>
+            <opts>
+                <correct>1</correct>
+                <text><![CDATA[YES]]></text>
+                <fb><![CDATA[You got it! If products are not selling, the next catalog mailed will likely reflect this through markdowns. However, this can take a while to get executed. First we must determine what isn't selling well. Then, get it marked down and into the next catalog. Then finally, we can mail the catalog to the customers.<br><br>Eventually, any leftover inventory will be sent from the distribution center to an outlet. ]]></fb>
+
+                <text><![CDATA[NO]]></text>
+                <fb><![CDATA[No, that’s not it. Please try again.]]></fb>
+            </opts>
+
+        </scenes>
+        <review>
+            <text><![CDATA[Now that you’ve taken a look at how catalogs fit into the consumer ordering channels, let’s take a look at planning for online ordering. Click Continue to move on.]]></text>
+
+
+        </review><dragItems/>
+    </scenario>
+    
+    
+    <scenario id="Basics: Multi Phase 2c" nodeNum="09" classID="SupplyBuild" frame="6">
+       
+        <finalNode><![CDATA[Yes]]></finalNode>
+        <title><![CDATA[Selling Channels: Catalog ]]></title>
+        <bodyText><![CDATA[Like many other retailers, Fashion, Inc. still has a lot of customers placing orders from catalogs delivered in the mail.]]></bodyText>
+        <button>
+            <text><![CDATA[CONTINUE]]></text>
+            <type><![CDATA[continue]]></type>
+            <url><![CDATA[]]></url>
+        </button>
+        <button>
+            <text><![CDATA[BACK]]></text>
+            <type><![CDATA[back]]></type>
+            <url><![CDATA[1]]></url>
+        </button>
+        
+        <instruct><![CDATA[Answer the question below.]]></instruct>
+        <constants>
+            <fbTitle><![CDATA[<b>Catalog Percentages</b>]]></fbTitle>
+            <retryTxt><![CDATA[<b>RETRY</b>]]></retryTxt>
+            <continueTxt><![CDATA[<b>CONTINUE</b>]]></continueTxt>
+        </constants>
+        
+        
+        <scenes>
+            <text><![CDATA[The timeliness of communicating markdowns to the customer is a big challenge with our catalogs. While in the retail store, we have the ability to markdown within one season; by the time a new catalog is printed and sent with the ‘sale items,’ the season may be coming to an end.<br><br>Did you know that catalog ordering has a rich and long history, starting around the turn of the 20th century? Let’s take a look at the impact of catalog selling over the last few decades.]]></text>
+            <ques><![CDATA[Click each option below to read the percentage of orders that were influenced by catalogs during these decades.]]></ques>
+            <opts>
+                <correct>0</correct>
+                <text><![CDATA[1960s]]></text>
+                <fb><![CDATA[1% of retail sales were placed via mail order/catalog. ]]></fb>
+
+                <text><![CDATA[1980s]]></text>
+                <fb><![CDATA[3% of retail sales were placed via mail order/catalog. The 1980s and early 1990s saw great growth as families earned more income, consumers were starting to use credit cards, and overall inventory management and fulfillment infrastructure was greatly improved to directly ship to customers. ]]></fb>
+
+                <text><![CDATA[2000s]]></text>
+                <fb><![CDATA[19% of retail sales were placed via catalog and/or via the internet. The internet drastically increased the overall growth while true catalog sales declined.]]></fb>
+            </opts>
+        </scenes>
+        
+        <review>
+            <text><![CDATA[]]></text>
+        </review>
+        <dragItems/>
+    </scenario>
+    
+    
+ <scenario id="Basics: P4" nodeNum="10" classID="SimpleImageText" frame="23">
+     <firstNode><![CDATA[Yes]]></firstNode>
+     <title><![CDATA[Online]]></title>
+        <button>
+            <text><![CDATA[CONTINUE]]></text>
+            <type><![CDATA[continue]]></type>
+            <url><![CDATA[1]]></url>
+        </button>
+        <button>
+            <text><![CDATA[BACK]]></text>
+            <type><![CDATA[back]]></type>
+            <url><![CDATA[1]]></url>
+        </button>
+     <bodyText><![CDATA[Planning for online ordering is kind of like planning for the catalog. The customer base is huge and varied, not regional like it is for retail stores. So planners need to determine what they want to sell, when they want to sell it, and at what price to sell it. ]]></bodyText>
+        <anim><![CDATA[]]></anim><dragItems/>
+    </scenario>
+    
+    
+    <scenario id="Basics: Multi Phase 3a" nodeNum="11" classID="SupplyBuild" frame="7">
+       
+        <title><![CDATA[Selling Channels: Online ]]></title>
+        <bodyText><![CDATA[Planning for online ordering is kind of like planning for the catalog. The customer base is huge and varied, not regional like it is for retail stores. So planners need to determine what they want to sell, when they want to sell it, and at what price to sell it.  ]]></bodyText>
+        <button>
+            <text><![CDATA[CONTINUE]]></text>
+            <type><![CDATA[continue]]></type>
+            <url><![CDATA[]]></url>
+        </button>
+        <button>
+            <text><![CDATA[BACK]]></text>
+            <type><![CDATA[back]]></type>
+            <url><![CDATA[1]]></url>
+        </button>
+        
+        <instruct><![CDATA[Answer the question below.]]></instruct>
+        <constants>
+            <fbTitle><![CDATA[<b>U.S. e-Commerce Spending</b>]]></fbTitle>
+            <retryTxt><![CDATA[<b>RETRY</b>]]></retryTxt>
+            <continueTxt><![CDATA[<b>CONTINUE</b>]]></continueTxt>
+        </constants>
+        <scenes>
+            <text><![CDATA[Once the inventory makes its way from the vendors to the distribution center, the retailer begins to advertise by sending emails announcing the new season merchandise. Fashion, Inc., like other fashion retailers, often publishes an online “look book” of up and coming styles to generate interest. ]]></text>
+            <ques><![CDATA[Beginning with 2011, click each of the years below to see the increase in e-commerce spending in the United States.]]></ques>
+            <opts>
+                <correct>0</correct><!--LINEAR REVEAL-->
+                <text><![CDATA[2011]]></text>
+                <fb><![CDATA[$202 Billion in e-commerce spending]]></fb>
+
+                <text><![CDATA[2012]]></text>
+                <fb><![CDATA[$226 Billion in e-commerce spending, 11% growth from 2011]]></fb>
+
+                <text><![CDATA[2016]]></text>
+                <fb><![CDATA[Estimated at $327 Billion, 45% growth from 2012]]></fb>
+                
+            </opts>
+        </scenes>
+
+        <review>
+            <text><![CDATA[  ]]></text>
+
+
+        </review><dragItems/>
+    </scenario>
+    
+    
+    <scenario id="Basics: Multi Phase 3b" nodeNum="12" classID="SupplyBuild" frame="8">
+        <title><![CDATA[Selling Channels: Online ]]></title>
+        <bodyText><![CDATA[  ]]></bodyText>
+        <button>
+            <text><![CDATA[CONTINUE]]></text>
+            <type><![CDATA[continue]]></type>
+            <url><![CDATA[]]></url>
+        </button>
+        <button>
+            <text><![CDATA[BACK]]></text>
+            <type><![CDATA[back]]></type>
+            <url><![CDATA[1]]></url>
+        </button>
+        
+        <instruct><![CDATA[Answer the question below.]]></instruct>
+        <constants>
+            <fbTitle><![CDATA[<b>Feedback</b>]]></fbTitle>
+            <retryTxt><![CDATA[<b>RETRY</b>]]></retryTxt>
+            <continueTxt><![CDATA[<b>CONTINUE</b>]]></continueTxt>
+        </constants>
+        
+        <scenes>
+            <text><![CDATA[Once the customer has placed the order from the website, e-commerce orders are filled the same way as every other channel with the distribution center receiving a notice to pick, pack and ship the product(s). As with a catalog, if the customer doesn’t like the product, they must ship it back to the distribution center for a refund or exchange.<br><br>When products don't sell online, retailers discount them and promote them via email, as well as advertisements on Facebook, Google and Bing. Eventually, any leftover inventory is sent to the outlet for sale. ]]></text>
+            <ques><![CDATA[What typically happens when a product sells out online?]]></ques>
+            <opts>
+                <correct>1</correct>
+                <text><![CDATA[The item shows 'out of stock' or is removed from the website.]]></text>
+                <fb><![CDATA[Correct! When a product sells out online, it may show as 'out of stock' or retailers may take the item off the website causing customers to assume they do not have any more of the item to sell, and may not have it at the store. This can create lost sales since the customer may go to a different retailer to find that item. ]]></fb>
+
+                <text><![CDATA[The retailer has a party since they sold all of the product from the DC.]]></text>
+                <fb><![CDATA[Although happy they sold their product, this is incorrect. Please try again. ]]></fb>
+
+                <text><![CDATA[The retailer allows for orders that will be backfilled.]]></text>
+                <fb><![CDATA[Though retailers appreciate a fast selling product, that answer is incorrect. Please try again.]]></fb>
+            </opts>
+
+        </scenes>
+        <review>
+            <text><![CDATA[  ]]></text>
+
+
+        </review><dragItems/>
+    </scenario>
+    
+    
+    <scenario id="Basics: Multi Phase 3c" nodeNum="13" classID="SupplyBuild" frame="9">
+        <finalNode><![CDATA[Yes]]></finalNode>
+        <title><![CDATA[Selling Channels: Online ]]></title>
+        <bodyText><![CDATA[Planning for online ordering is kind of like planning for the catalog. The customer base is huge and varied, not regional like it is for retail stores. So planners need to determine what they want to sell, when they want to sell it, and at what price to sell it.  ]]></bodyText>
+        <button>
+            <text><![CDATA[CONTINUE]]></text>
+            <type><![CDATA[continue]]></type>
+            <url><![CDATA[]]></url>
+        </button>
+        <button>
+            <text><![CDATA[BACK]]></text>
+            <type><![CDATA[back]]></type>
+            <url><![CDATA[1]]></url>
+        </button>
+        
+        <instruct><![CDATA[Answer the question below.]]></instruct>
+        <constants>
+            <fbTitle><![CDATA[<b>Feedback</b>]]></fbTitle>
+            <retryTxt><![CDATA[<b>RETRY</b>]]></retryTxt>
+            <continueTxt><![CDATA[<b>CONTINUE</b>]]></continueTxt>
+        </constants>
+        <scenes>
+            <text><![CDATA[Online inventory is subject to the same risks and limitations based on consumer demand as other channels. When a product has a high demand, there is a risk of not having enough inventory at the distribution center to ship to the customer. Of course, when there is too much inventory (or a product is just not selling well), the retailer risks loss of profit due to markdowns.]]></text>
+            <ques><![CDATA[What is the most common customer action when they don't find a particular item online?]]></ques>
+            <opts>
+                <correct>2</correct>
+                <text><![CDATA[The customer buys a different item.]]></text>
+                <fb><![CDATA[Not quite. Please try again.]]></fb>
+
+                <text><![CDATA[The customer looks into buying the same or similar item from another retailer.]]></text>
+                <fb><![CDATA[You got it! This is the most common outcome and is not good because the retailer lost the sale and the customer. ]]></fb>
+
+                <text><![CDATA[The customer does not buy anything.]]></text>
+                <fb><![CDATA[This does happen, but it's not the most likely outcome. However, it is definitely not good for the retailer since they lost the sale. Please try again.]]></fb>
+
+                <text><![CDATA[The customer comes into the store.]]></text>
+                <fb><![CDATA[That might be the case in some instances, but it's not the most common response. Please try again.]]></fb>
+            </opts>
+        </scenes>
+        <review>
+            <text><![CDATA[That covers the online component of the consumer ordering channels. Click Continue to keep learning!]]></text>
+        </review><dragItems/>
+    </scenario>
+    <scenario id="Basics: P5" nodeNum="14" classID="SimpleImageText" frame="4">
+        <title><![CDATA[Omni-channel Order Management]]></title>
+        <bodyText><![CDATA[To better serve customers, retailers like Fashion, Inc. have moved to Omni-channel Order Management. This emerging order management process uses better technology that facilitates efficient order management and fulfillment. Now, all of the inventory at the stores and in the distribution center can be available for all channels.<br><br>Let’s say a customer attempts to place an order for a pair of shoes, but the distribution center is out of her size. We can use the store inventory by shipping the shoes directly from the store, thus saving the sale.<br><br>]]></bodyText>
+        <button>
+            <text><![CDATA[CONTINUE]]></text>
+            <type><![CDATA[continue]]></type>
+            <url><![CDATA[1]]></url>
+        </button>
+        <button>
+            <text><![CDATA[BACK]]></text>
+            <type><![CDATA[back]]></type>
+            <url><![CDATA[1]]></url>
+        </button>
+        <anim><![CDATA[ani_mc]]></anim><dragItems/>
+    </scenario><scenario id="Basics: P6" nodeNum="15" classID="SimpleImageText" frame="5">
+        <title><![CDATA[Advantages to Fashion, Inc.]]></title>
+        <bodyText><![CDATA[What a great advantage this will give us! And, what about those sweaters in South Florida? If an item isn’t selling well in the South due to climate differences, but is still selling well in the North, a customer may place an order online and the order can be routed to the Southern store since that store is over-stocked. The sales associate in the South then picks and ships the product to the cold Northern customer who wants a sweater, which eliminates the need for deep discounts and eroding margins in the South Florida retail stores.]]></bodyText>
+        <button>
+            <text><![CDATA[CONTINUE]]></text>
+            <type><![CDATA[continue]]></type>
+            <url><![CDATA[1]]></url>
+        </button>
+        <button>
+            <text><![CDATA[BACK]]></text>
+            <type><![CDATA[back]]></type>
+            <url><![CDATA[1]]></url>
+        </button>
+        <anim><![CDATA[]]></anim><dragItems/>
+    </scenario><scenario id="Basics: P7" nodeNum="16" classID="SimpleImageText" frame="6">
+        <title><![CDATA[]]></title>
+        <bodyText><![CDATA[By leveraging the entire network of inventory across stores and distribution centers, inventory is available to the customer who wants it no matter where that inventory is located. The customer is happy because they can get that sweater, and the retailer is happy because the sale generates an increase in otherwise lost revenue.]]></bodyText>
+        <button>
+            <text><![CDATA[CONTINUE]]></text>
+            <type><![CDATA[continue]]></type>
+            <url><![CDATA[1]]></url>
+        </button>
+        <button>
+            <text><![CDATA[BACK]]></text>
+            <type><![CDATA[back]]></type>
+            <url><![CDATA[1]]></url>
+        </button>
+        <anim><![CDATA[]]></anim><dragItems/>
+    </scenario>
+    
+    <scenario id="Basics: P8" nodeNum="17" classID="SimpleImageText" frame="25">
+        <title><![CDATA[Roles in Order Management]]></title>
+        <bodyText><![CDATA[In omni-channel order management, it takes quite a few people operating in various roles to be successful. I'd like to take a moment to introduce you to a few of them, as they will be helping to explain some key concepts throughout this course.]]></bodyText>
+        <button>
+            <text><![CDATA[CONTINUE]]></text>
+            <type><![CDATA[continue]]></type>
+            <url><![CDATA[1]]></url>
+        </button>
+        <button>
+            <text><![CDATA[BACK]]></text>
+            <type><![CDATA[back]]></type>
+            <url><![CDATA[1]]></url>
+        </button>
+        <anim><![CDATA[]]></anim><dragItems/>
+    </scenario>
+    
+    
+    
+    <scenario id="Basics: Matching" nodeNum="18" classID="dragDropMatch" frame="1" audioFile="">
+        <title><![CDATA[Roles in Order Management]]></title>
+        <title><![CDATA[ ]]></title>
+        <title><![CDATA[ ]]></title>
+        <title><![CDATA[ ]]></title>
+        <bodyText><![CDATA[Roll over each person below to read a description of his or her responsibilities. Then, drag each of the roles to the people who fill them.]]></bodyText>
+        
+        <button>
+            <text><![CDATA[CONTINUE]]></text>
+            <type><![CDATA[continue]]></type>
+            <url><![CDATA[]]></url>
+        </button>
+        <button>
+            <text><![CDATA[BACK]]></text>
+            <type><![CDATA[back]]></type>
+            <url><![CDATA[1]]></url>
+        </button><constants>
+            <fbTitle><![CDATA[<b>Feedback</b>]]></fbTitle>
+            <retryTxt><![CDATA[<b>RETRY</b>]]></retryTxt>
+            <continueTxt><![CDATA[<b>CONTINUE</b>]]></continueTxt>
+            <closeTxt><![CDATA[<b>CLOSE</b>]]></closeTxt>
+            <fbGood><![CDATA[Well done! You correctly identified the role that person fills in the omni-channel order management process.<br><br>Make sure you have matched every role before moving on. Once you have matched all roles, you can roll over each person to review the roles or click Continue to move on.]]></fbGood><fbBad><![CDATA[That isn't the correct match. Give it another attempt. <br><br>Click Retry to try again.]]></fbBad></constants>
+        
+        <dragItems>
+            <drag>
+                <text><![CDATA[<font size="13">Network Inventory Manager</font>]]></text>
+                <targ><![CDATA[1]]></targ>
+            </drag>
+            <drag>
+                <text><![CDATA[Customer Care Specialist]]></text>
+                <targ><![CDATA[2]]></targ>
+            </drag>
+            <drag>
+                <text><![CDATA[Allocation Specialist]]></text>
+                <targ><![CDATA[3]]></targ>
+            </drag>
+            <drag>
+                <text><![CDATA[Store Associate]]></text>
+                <targ><![CDATA[4]]></targ>
+            </drag>
+            <drag>
+                <text><![CDATA[Regional Store Manager]]></text>
+                <targ><![CDATA[5]]></targ>
+            </drag>
+            <drag>
+                <text><![CDATA[Consumer]]></text>
+                <targ><![CDATA[6]]></targ>
+            </drag>
+            
+            <!--TIM FYI this drag tagset used to be Joe, who is no longer in the activity. Need to delete the static images/text for this guy-->
+            <!--<drag>
+                <text><![CDATA[DELETE]]></text>
+                <targ><![CDATA[7]]></targ>
+                </drag>-->
+            
+        </dragItems>
+        
+        <dropItems>
+            <drop>
+                <text><![CDATA[Roberto]]></text><text><![CDATA[Roberto]]></text>
+                <popTitle><![CDATA[Roberto]]></popTitle><popTitle><![CDATA[Roberto]]></popTitle>
+                <popBody><![CDATA[Hi, my name is Roberto. In my role, I plan inventory based on input from the forecasted demand, past demand cycles, demand by channel, and season channel.]]></popBody><popBody><![CDATA[Network inventory managers keep a pulse on demand in all channels. When a product becomes “hot” in one market or region, shifts in inventory distribution may need to occur. ]]></popBody>
+            </drop>
+            <drop>
+                <text><![CDATA[Marcia]]></text><text><![CDATA[Marcia]]></text>
+                <popTitle><![CDATA[Marcia]]></popTitle><popTitle><![CDATA[Marcia]]></popTitle>
+                <popBody><![CDATA[Hello, my name is Marcia. I answer calls from customers who want to find out the status of an order, change an order, order something new…and sometimes complain.]]></popBody><popBody><![CDATA[Thanks to advances from omni-channel order management, Customer Care Specialists, like Marcia, now have more tools available to find a resolution to their caller’s needs. ]]></popBody>
+            </drop>
+            <drop>
+                <text><![CDATA[Janelle]]></text><text><![CDATA[Janelle]]></text>
+                <popTitle><![CDATA[Janelle]]></popTitle><popTitle><![CDATA[Janelle]]></popTitle>
+                <popBody><![CDATA[Hey! I’m Janelle. I work in fulfillment and manage the business rules on how orders are serviced. We use rules to get products to our customers in the right priority.]]></popBody><popBody><![CDATA[Allocation specialists like Janelle are focused on continually improving the efficiencies in order fulfillment. They like ways to reduce costs and increase customer satisfaction.]]></popBody>
+            </drop>           
+            <drop>
+                <text><![CDATA[Kylie]]></text><text><![CDATA[Kylie]]></text>
+                <popTitle><![CDATA[Kylie]]></popTitle><popTitle><![CDATA[Kylie]]></popTitle>
+                <popBody><![CDATA[Hi there, my name is Kylie. I have been with the company for about three years and really enjoy getting to know the customers and helping them look fabulous!]]></popBody><popBody><![CDATA[Kylie is a store associate. With added responsibilities of picking, packing and shipping, store associates may feel they have less time to spend with their in-store customers.]]></popBody>
+            </drop>
+            <drop>
+                <text><![CDATA[Andrew]]></text><text><![CDATA[Andrew]]></text>
+                <popTitle><![CDATA[Andrew]]></popTitle><popTitle><![CDATA[Andrew]]></popTitle>
+                <popBody><![CDATA[My name is Andrew. I ensure our stores meet the needs of our online and walk-in consumers. I track consumer shipments, pickups and cancellations, if needed.]]></popBody><popBody><![CDATA[Regional store managers need to stay acutely informed and aware of the inventory available to serve both customers who make purchases online and those who walk through the door. ]]></popBody>
+            </drop>   
+            <drop>
+                <text><![CDATA[Delia]]></text><text><![CDATA[Delia]]></text>
+                <popTitle><![CDATA[Delia]]></popTitle><popTitle><![CDATA[Delia]]></popTitle>
+                <popBody><![CDATA[I’m Delia. I’m obsessed with Fashion, Inc. I have a gold Fashion, Inc. reward card, I shop in the store and online, and I’ve even ordered from the catalog!]]></popBody><popBody><![CDATA[Consumers like Delia know how and where to find the best discounts and promotions on products. They love flexibility and are starting to expect free shipping and convenience.]]></popBody>
+            </drop>
+            
+            <!--TIM delete this guy too, it went with Joe-->
+            <!--<drop>
+                <text><![CDATA[DELETE]]></text><text><![CDATA[DELETE]]></text>
+                <popTitle><![CDATA[DELETE]]></popTitle><popTitle><![CDATA[DELETE]]></popTitle>
+                <popBody><![CDATA[DELETE]]></popBody><popBody><![CDATA[DELETE]]></popBody>
+                </drop>-->
+        </dropItems>
+        
+    </scenario>
+    
+    
+    <scenario id="Basics: P9" nodeNum="19" classID="SimpleImageText" frame="7">
+        <title><![CDATA[Roles and Groups in Order Management]]></title><title><![CDATA[Corporate/HQ]]></title><title><![CDATA[In- Store]]></title><title><![CDATA[Consumers]]></title>
+        <title><![CDATA[Roberto]]></title><title><![CDATA[Marcia]]></title><title><![CDATA[Janelle]]></title><title><![CDATA[Kylie]]></title><title><![CDATA[Andrew]]></title><title><![CDATA[Delia]]></title>
+        
+        <!--TIM and this guy-->
+        <!--<title><![CDATA[DELETE]]></title>-->
+        
+        <bodyText><![CDATA[Great job on matching people to their selling channel roles! As you can see below, each role fits into one of three groups:<br><br><ul><li><b>Corporate/HQ:</b> Looks at the “big picture,” analyzing regional markets, shifts in inventory, and selling trends.</li><li><b>In-Store:</b> Works on the “front lines,” interacting face-to-face with consumers to help them find the products they need.</li><li><b>Consumers:</b> Order products online/via catalogs or purchase products in retail stores.</li></ul>]]></bodyText>
+        <button>
+            <text><![CDATA[CONTINUE]]></text>
+            <type><![CDATA[continue]]></type>
+            <url><![CDATA[1]]></url>
+        </button>
+        <button>
+            <text><![CDATA[BACK]]></text>
+            <type><![CDATA[back]]></type>
+            <url><![CDATA[1]]></url>
+        </button>
+        <anim><![CDATA[]]></anim><dragItems/>
+    </scenario>
+        
+    <scenario id="Basics: Summary" nodeNum="20" classID="Conclusion" frame="1">
+        <title><![CDATA[Omni-channel Order Management]]></title>
+        <bodyText><![CDATA[In this module, you learned about the different channels that serve customers. You also explored how implementing an omni-channel distribution system can help retailers better meet customer needs while increasing the margins on existing inventory. You also met a few of the people involved in the order management lifecycle. In the coming modules, you will see firsthand how omni-channel order management benefits retailers, consumers and the people you just met.]]></bodyText>
+        <button>
+            <text><![CDATA[CONTINUE]]></text>
+            <type><![CDATA[shell]]></type>
+            <url><![CDATA[1]]></url>
+        </button>
+        <button>
+            <text><![CDATA[BACK]]></text>
+            <type><![CDATA[back]]></type>
+            <url><![CDATA[1]]></url>
+        </button><dragItems/>
+        
+    </scenario><!--<scenario id="Basics: Multi Phase 1" nodeNum="04" classID="SupplyBuild" frame="1">
+        <title><![CDATA[Selling Channels: In-Store ]]></title>
+        <bodyText><![CDATA[Welcome to a Fashion, Inc. retail store! We have stores that are freestanding, in shopping malls, and even in airports. Each looks similar, but has slight modifications based on location and the amount and variety of items it carries. So, how do all these products get into one of our stores?<br><br>]]></bodyText>
+        <button>
+            <text><![CDATA[CONTINUE]]></text>
+            <type><![CDATA[continue]]></type>
+            <url><![CDATA[1]]></url>
+        </button>
+        <button>
+            <text><![CDATA[BACK]]></text>
+            <type><![CDATA[back]]></type>
+            <url><![CDATA[1]]></url>
+        </button>
+        <instruct><![CDATA[Answer the question below.]]></instruct>
+        <constants>
+            <fbTitle><![CDATA[<b>Feedback</b>]]></fbTitle>
+            <retryTxt><![CDATA[<b>RETRY</b>]]></retryTxt>
+            <continueTxt><![CDATA[<b>CONTINUE</b>]]></continueTxt>
+        </constants>
+        
+        <scenes>
+            <text><![CDATA[It all starts with our buyers and planners in New York, Miami, Paris and Milan. They watch upcoming fashion trends and figure out what they want Fashion, Inc. to sell, when we should sell it, and the price and margin for which they believe we are able to sell a product. In the long run, they determine how much Fashion, Inc. orders from our vendors and how much inventory goes to each store.]]></text>
+            <ques><![CDATA[Which of the following criteria do you think is evaluated in determining the amount to order for each store? ]]></ques>
+            <opts>
+                <correct>4</correct>
+                <text><![CDATA[Customer Demographics]]></text>
+                <fb><![CDATA[While local customer demographics are a part of the ordering equation, there are also other criteria also play an important role in determining the amount to order for the local store. Please try again.]]></fb>
+
+                <text><![CDATA[Store Size]]></text>
+                <fb><![CDATA[Store size definitely impacts how much inventory the store can have. However, other criteria also play an important role in determining the amount to order for a particular store. Please try again.]]></fb>
+
+                <text><![CDATA[Store Location]]></text>
+                <fb><![CDATA[Please try again. Store location such as urban vs. suburban or north vs. south, also impact how much inventory the store should have. However, other criteria also play an important role in determining the amount to order for a particular store.]]></fb>
+
+                <text><![CDATA[All of these criteria]]></text>
+                <fb><![CDATA[Correct! Retailers use many criteria to try to get the right amount of the right product in the right store location. They use customer demographics, store size, and location.]]></fb>
+            </opts>
+        </scenes>
+        <scenes>
+            <text><![CDATA[Once the planners figure out the amount to order for each store, the item is shipped and the local store is in charge of selling it.<br><br>If the item is selling well and inventory is available, the store may try to get more from the distribution center to take advantage of the hot selling items. ]]></text>
+            <ques><![CDATA[What do you think happens when the inventory is NOT selling well?]]></ques>
+            <opts>
+                <correct>2</correct>
+                <text><![CDATA[The store raises the price to make the customer believe it is the hot new item.]]></text>
+                <fb><![CDATA[No, that’s not it. Customers know what they like as well as the overall value of these items. Please try again.]]></fb>
+
+                <text><![CDATA[The store begins to markdown the price of the inventory to sell it.]]></text>
+                <fb><![CDATA[Right! When inventory isn’t selling well, stores typically begin the markdown process. Eventually, any leftover inventory is sold at ‘clearance’ prices or may be shipped from the store to be sold at an outlet. ]]></fb>
+
+                <text><![CDATA[The inventory is moved to the front of the store to showcase the items.]]></text>
+                <fb><![CDATA[Incorrect. Please try again. No matter where the items are located, customers know what they like and what they don’t like. This doesn’t help the store sell more.]]></fb>
+
+                
+                
+            </opts>
+
+        </scenes>
+        <scenes>
+            <text><![CDATA[Most of our customers shop at our Fashion, Inc. retail stores, but physical stores can have limitations. <br><br>Retail stores serve customers who live in their local markets and who come to those stores. Some of our stores are large, like flagships, but others are small. The smaller stores can’t carry all of the products we have available due to their size.<br><br>Another issue often faced is when a local market may not like a certain product (think sweaters in South Florida), or the local market gets really excited about a certain product.]]></text>
+            <ques><![CDATA[What do you think is the downside of a local market getting really excited about a particular product?]]></ques>
+            <opts>
+                <correct>2</correct>
+                <text><![CDATA[No parking spaces at the mall]]></text>
+                <fb><![CDATA[Although this may be the result of a high demand product, this hasn’t caused the store any issues. Please try again. ]]></fb>
+
+                <text><![CDATA[Store is out of stock]]></text>
+                <fb><![CDATA[Yes, although it is good for the retailer to sell all of their items, the retailer also disappoints customers when they run out of stock. This results in lost sales that they could have made, especially if inventory was available in the retailer’s network. This can also cause customer loyalty issues if customers make a purchase from another retailer. ]]></fb>
+
+                <text><![CDATA[Increased traffic]]></text>
+                <fb><![CDATA[While this may be a result of local market getting excited about a product, it is not the main impact. Also, the customers will often leave disappointed if the product they wanted is not in stock. Try again.]]></fb>
+
+                <text><![CDATA[Higher profit]]></text>
+                <fb><![CDATA[Sure, sales are great for the bottom line, but if we don't have extra product to sell, how can we make any higher profits? Try again.]]></fb>
+            </opts>
+
+
+
+        </scenes>
+
+
+        <review>
+            <text><![CDATA[That covers the basic information for the in-store channel of consumer buying, but we’ll need to cover a few more important elements. Click Continue to learn more.]]></text>
+
+
+        </review><dragItems/>
+    </scenario>--><!--<scenario id="Basics: Multi Phase 2" nodeNum="05" classID="SupplyBuild" frame="2">
+        <title><![CDATA[Selling Channels: Catalog ]]></title>
+        <bodyText><![CDATA[Like many other retailers, Fashion, Inc. still has a lot of customers placing orders from catalogs delivered in the mail. ]]></bodyText>
+        <button>
+            <text><![CDATA[CONTINUE]]></text>
+            <type><![CDATA[continue]]></type>
+            <url><![CDATA[]]></url>
+        </button>
+        <button>
+            <text><![CDATA[BACK]]></text>
+            <type><![CDATA[back]]></type>
+            <url><![CDATA[1]]></url>
+        </button>
+        
+        <instruct><![CDATA[Answer the question below.]]></instruct>
+        <constants>
+            <fbTitle><![CDATA[<b>Feedback</b>]]></fbTitle>
+            <retryTxt><![CDATA[<b>RETRY</b>]]></retryTxt>
+            <continueTxt><![CDATA[<b>CONTINUE</b>]]></continueTxt>
+        </constants>
+        <scenes>
+            <text><![CDATA[Like the retail channel, the planners figure out the products to sell via catalog, the price at which to sell, and the number of items they believe will sell. Then, they place the order from the vendors and get the product into the distribution center. The catalogs are mailed to customers on our mailing list, and we wait for the orders to start to come in – by either phone or mail.<br><br>Although it's a productive channel, it is not without its challenges. Catalog orders make it difficult to track and predict the demand of a product. ]]></text>
+            <ques><![CDATA[Traditionally, what happens when a customer doesn’t like the product he or she ordered from a catalog? ]]></ques>
+            <opts>
+                <correct>2</correct>
+                <text><![CDATA[The customer puts the item in his/her closet and never uses it.]]></text>
+                <fb><![CDATA[Consumers may put the item up and forget about it. While that may be good for the retailer, it doesn't provide the consumer with a good experience. A clear and easy exchange for catalog (and web) purchases would provide a better experience. Consider what the consumer might do if they want to exchange the item.]]></fb>
+
+                <text><![CDATA[The customer ships the items back to the retailer for a return or exchange.]]></text>
+                <fb><![CDATA[Traditionally, when consumers want to return or exchange something they purchased from a catalog, they must ship the product back to the distribution center. Later, we'll discuss how this process is changing to be more convenient for consumers.]]></fb>
+
+                <text><![CDATA[The customer takes the product into the store.]]></text>
+                <fb><![CDATA[Sure, this might be an acceptable practice if the network is optimized for order management. However, with single channel processing, the customer has no option to return the product to the distribution center. ]]></fb>
+
+                
+                
+            </opts>
+        </scenes>
+        <scenes>
+            <text><![CDATA[Like other channels, the catalog order channel is subject to customer demand. When products are in high demand, the catalog may lose sales by not having enough inventory in the distribution center. ]]></text>
+            <ques><![CDATA[When products are not selling through the catalog, do you think it is possible to offer markdowns?]]></ques>
+            <opts>
+                <correct>1</correct>
+                <text><![CDATA[YES]]></text>
+                <fb><![CDATA[You got it! If products are not selling, the next catalog mailed will likely reflect this through markdowns. However, this can take a while to get executed. First we must determine what isn't selling well. Then, get it marked down and into the next catalog. Then finally, we can mail the catalog to the customers.<br><br>Eventually, any leftover inventory will be sent from the distribution center to an outlet. ]]></fb>
+
+                <text><![CDATA[NO]]></text>
+                <fb><![CDATA[No, that’s not it. Please try again.]]></fb>
+
+
+
+
+
+
+            </opts>
+
+        </scenes>
+        <scenes>
+            <text><![CDATA[Another issue with catalogs is the markdowns on products that didn’t sell well initially. While in the retail store, we have the ability to markdown within one season; by the time a new catalog is printed and sent with the ‘sale items,’ the season may be coming to an end.]]></text>
+            <ques><![CDATA[Click each option below to read the percentage of orders that were influenced by catalogs during these decades.]]></ques>
+            <opts>
+                <correct>0</correct>
+                <text><![CDATA[1960s]]></text>
+                <fb><![CDATA[1% of retail sales were placed via mail order/catalog. ]]></fb>
+
+                <text><![CDATA[1980s]]></text>
+                <fb><![CDATA[3% of retail sales were placed via mail order/catalog. The 1980s and early 1990s saw great growth as families earned more income, consumers were starting to use credit cards, and overall inventory management and fulfillment infrastructure was greatly improved to directly ship to customers. ]]></fb>
+
+                <text><![CDATA[2000s]]></text>
+                <fb><![CDATA[19% of retail sales were placed via catalog and/or via the internet. The internet drastically increased the overall growth while true catalog sales declined.]]></fb>
+
+                
+                
+            </opts>
+
+
+
+        </scenes>
+
+
+        <review>
+            <text><![CDATA[Now that you’ve taken a look at how catalogs fit into the consumer ordering channels, let’s take a look at planning for online ordering. Click Continue to move on.]]></text>
+
+
+        </review><dragItems/>
+    </scenario>--><!--<scenario id="Basics: Multi Phase 3" nodeNum="06" classID="SupplyBuild" frame="3">
+        <title><![CDATA[Selling Channels: Online ]]></title>
+        <bodyText><![CDATA[Planning for online ordering is kind of like planning for the catalog. The customer base is huge and varied, not regional like it is for retail stores. So planners need to determine what they want to sell, when they want to sell it, and at what price to sell it.  ]]></bodyText>
+        <button>
+            <text><![CDATA[CONTINUE]]></text>
+            <type><![CDATA[continue]]></type>
+            <url><![CDATA[]]></url>
+        </button>
+        <button>
+            <text><![CDATA[BACK]]></text>
+            <type><![CDATA[back]]></type>
+            <url><![CDATA[1]]></url>
+        </button>
+        
+        <instruct><![CDATA[Answer the question below.]]></instruct>
+        <constants>
+            <fbTitle><![CDATA[<b>Feedback</b>]]></fbTitle>
+            <retryTxt><![CDATA[<b>RETRY</b>]]></retryTxt>
+            <continueTxt><![CDATA[<b>CONTINUE</b>]]></continueTxt>
+        </constants>
+        <scenes>
+            <text><![CDATA[Once the inventory makes its way from the vendors to the distribution center, the retailer begins to advertise by sending emails that the new season is on its way. Fashion, Inc., like other fashion retailers, often publishes an online “look book” of up and coming styles to generate interest. ]]></text>
+            <ques><![CDATA[Beginning with 2011, click each of the years below to see the increase in e-commerce spending in the United States.]]></ques>
+            <opts>
+                <correct>0</correct><!-\-LINEAR REVEAL-\->
+                <text><![CDATA[2011]]></text>
+                <fb><![CDATA[$202 Billion in e-commerce spend.]]></fb>
+
+                <text><![CDATA[2012]]></text>
+                <fb><![CDATA[$226 Billion in e-commerce spend, 11% growth from 2011.]]></fb>
+
+                <text><![CDATA[2016]]></text>
+                <fb><![CDATA[Estimated at $327 Billion, 45% growth from 2012.]]></fb>
+
+                
+                
+            </opts>
+        </scenes>
+        <scenes>
+            <text><![CDATA[Once the customer has placed the order from the website, e-commerce orders are filled the same way as every other channel with the distribution center receiving a notice to pick, pack and ship the product(s). As with a catalog, if the customer doesn’t like the product, they must ship it back to the distribution center for a refund or exchange.<br><br>When products don't sell online, retailers discount them and promote them via email, as well as advertisements on Facebook, Google and Bing. Eventually, any leftover inventory is sent to the outlet for sale. ]]></text>
+            <ques><![CDATA[What typically happens when a product sells out online?]]></ques>
+            <opts>
+                <correct>1</correct>
+                <text><![CDATA[The item shows 'out of stock' or is removed from the website.]]></text>
+                <fb><![CDATA[Correct! When a product sells out online, it may show as 'out of stock' or retailers may take the item off the website causing customers to assume they do not have any more of the item to sell, and may not have it at the store. This can create lost sales since the customer may go to a different retailer to find that item. ]]></fb>
+
+                
+                
+
+                <text><![CDATA[The retailer has a party since they sold all of the product from the DC.]]></text>
+                <fb><![CDATA[Although happy they sold their product, this is incorrect. Please try again. ]]></fb>
+
+                <text><![CDATA[The retailer allows for orders that will be backfilled.]]></text>
+                <fb><![CDATA[Though retailers appreciate a fast selling product, that answer is incorrect. Please try again.]]></fb>
+            </opts>
+
+        </scenes>
+        <scenes>
+            <text><![CDATA[Online inventory is subject to the same risks and limitations based on consumer demand as other channels. When a product has a high demand, there is a risk of not having enough inventory at the distribution center to ship to the customer. Of course, when there is too much inventory (or a product is just not selling well), the retailer risks loss of profit due to markdowns.]]></text>
+            <ques><![CDATA[What is the most common customer action when they don't find a particular item online?]]></ques>
+            <opts>
+                <correct>2</correct>
+                <text><![CDATA[The customer buys a different item.]]></text>
+                <fb><![CDATA[Not quite. Please try again.]]></fb>
+
+                <text><![CDATA[The customer looks into buying the same or similar item from another retailer.]]></text>
+                <fb><![CDATA[You got it! This is the most common outcome and is not good because the retailer lost the sale and customer. ]]></fb>
+
+                <text><![CDATA[The customer does not buy anything.]]></text>
+                <fb><![CDATA[This does happen, but it's not the most likely outcome. However, it is definitely not good for the retailer since they lost the sale. Please try again.]]></fb>
+
+                <text><![CDATA[The customer comes into the store.]]></text>
+                <fb><![CDATA[That might be the case in some instances, but it's not the most common response. Please try again.]]></fb>
+            </opts>
+
+
+
+        </scenes>
+
+
+
+
+
+
+        <review>
+            <text><![CDATA[That covers the online component of the consumer ordering channels. Click Continue to keep learning!]]></text>
+
+
+        </review><dragItems/>
+    </scenario>-->
+    
+    
+    
+    
+
+
+    
+    
+    
+    
+
+
+</module>

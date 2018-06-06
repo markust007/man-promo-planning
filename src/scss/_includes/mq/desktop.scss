@@ -1,0 +1,64 @@
+/*==============================
+            BASE
+==============================*/
+#app {
+  width: $max-width;
+  height: $section-height;
+}
+.container {
+  max-width: $max-width;
+}
+h1 {
+  font-size: 36px;
+}
+h2 {
+  font-size: 28px;
+}
+h3 {
+  font-size: 24px;
+}
+section, .page1, .page2, .page3, .page4, .page5, .page6 {
+  width: $max-width;
+  height: $section-height;
+}
+
+.topbar {
+  display: block;
+}
+.main-logo {
+  display: block;
+}
+
+/*==============================
+            SECTION 1
+==============================*/
+#section1 {
+  height: $section-height;
+  background: url("../media/global/background_mc.png") bottom;
+  @include background();
+  /* this is to stop collapsing margins */
+  padding-top: 1px;
+  margin-top: -1px;
+
+  //COMMON STYLING
+  user-select: none;
+
+//END SECTION 1
+}
+
+/*==============================
+            SECTION 2
+==============================*/
+#section2 {
+  height: $section-height;
+  background: url("../media/global/background_mc.png") bottom;
+  @include background();
+  /* this is to stop collapsing margins */
+  padding-top: 1px;
+  margin-top: -1px;
+
+  //COMMON STYLING
+  user-select: none;
+
+//END SECTION 2
+}

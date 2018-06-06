@@ -1,0 +1,186 @@
+{
+  "portraitAlert": "This course was designed to be viewed in landscape mode.<br><br>Please rotate your device.",
+  "intro1": {
+    "title": "Inventory Optimization",
+    "text": "<p>Planners determine the amount of inventory needed for a given promotion of products. Often, a promotion involves advertising the product and selling it at a discounted price. Planning involves a strategic look at a product and a decision as to how it will be promoted. Planners discover answers to the following questions to help develop the plan:</p><ul><li>How have similar products sold in the past?</li><li>What was the cost?</li><li>What price should we set?</li><li>How many units of the product can we sell?</li></ul>"
+  },
+  "intro2": {
+    "title": "Promotions and Their Lifecycles",
+    "text": "<p>It is challenging to plan a season in advance and respond during the season. I often work on multiple plans with varying durations at the same time. The duration depends on the products involved, location of the products, the organization’s goals, and seasonality. For example: A plan for Halloween decorations wouldn’t likely run through Christmas. These same considerations apply to promotional plans too.</p>"
+  },
+  "intro3": {
+    "title": "Factors of Planning",
+    "text": "<p>Planners make good planning decisions by reviewing data and working with other professionals with a common goal. Planners rely on these resources and people to make promotion planning decisions, including:</p><ul><li>What to promote</li><li>How much to discount the price, if at all</li><li>Where to promote: in locations that are similar based on their consumers—called clusters—or based on shared geographic areas—called regions</li><li>When to promote: should seasonality be considered? Is this product going to be on shelves year-round?</li><li>How many products and units of a product are required to maximize profit potential</li></ul>"
+  },
+  "activity1": {
+    "modalTitle": "Factors in Action",
+    "modalText": "To see how these factors might look, let’s follow a product example: the uniform of every fun holiday theme party, the ugly sweater. What might a plan for an ugly sweater look like? After closing this popup, select the arrows to explore.",
+    "title": "Factors in Action",
+    "text": "Moving from left to right, select each category below.",
+    "categories": [
+      {
+        "title": "What",
+        "text": "Why would anyone want an ugly sweater? Well, one way or another, the merchants have them and would like to sell them quickly. The marketer on your team believes that consumers would snatch them up if they advertise for holiday parties or gag-gifts."
+      },
+      {
+        "title": "Promotional Rate",
+        "text": "The price the merchant has for these ugly sweaters isn’t much cheaper than sweaters that are noticeably not ugly. This price probably won’t appeal to customers if they’re only going to wear them once. The planner discounts them at a high rate for an attractive sale."
+      },
+      {
+        "title": "Where",
+        "text": "If you were looking for an ugly sweater, would you look in a high-end fashion mall? Maybe not. The plan is set to sell these sweaters in retail stores with a wide customer audience."
+      },
+      {
+        "title": "When",
+        "text": "Seasonality is the biggest factor for these items. The ugly sweaters should be on shelves for the holiday season, and they should swiftly be off shelves by the time the season ends. Who would buy an ugly sweater in July, even if it was marked off?"
+      },
+      {
+        "title": "How Many",
+        "text": "District Store Managers of retail clothing stores seem to think ugly sweaters would be nice items at a promotion price, but no one wants to have rack after rack. A relatively small amount is selected for the promotion."
+      }
+    ]
+  },
+  "middle": {
+    "title": "Time to Practice",
+    "text": "<p>Our ugly holiday sweater example showed some wise decisions on how to plan a promotion for specialty item. But, imagine if there were missteps in certain aspects of the plan:</p><ul><li><strong>Promotional Discount:</strong> Too slight of a discount would result in few sales, and stores would have excess inventory that would need significant markdowns.</li><li><strong>Where:</strong> Ugly sweaters would attract few buyers in niche stores, boutiques, or high-end stores.</li><li><strong>When:</strong> They would not sell at any other time than the holidays.</li><li><strong>How Many:</strong> With any product, sending too many (overestimating demand) leads to unsold inventory that takes up space. Sending too few frustrates customers if demand is high.</li></ul><p>In the next activity, create a plan by consulting with professionals and making your own decisions about promoting a product.</p>"
+  },
+  "activity2": {
+    "modalTitle": "Planning a Promotion ",
+    "modalText": "An American fashion line has produced a new, one-piece women’s bathing suit called Fine-Line. As a planner, your market research indicates women’s bathing suits with this style will really take off this year.<br><br>You met with the merchants who designed Fine-Line and you’re ready to start planning your promotion for the suit. It’s time to decide the <span style=\"color:#FEFF99;\">promotional rate</span>, <span style=\"color:#FEFF99;\">where</span> it should be sold, <span style=\"color:#FEFF99;\">how many</span> to distribute to each store and <span style=\"color:#FEFF99;\">when</span> to do so. At any time, you can consult a professional to ask questions about the product.",
+    "title": "Planning a Promotion",
+    "text": "Use the up and down arrows for each factor to scroll through available options. Click Submit when you finish making your selections. At any time, click a character portrait to learn more about the product.",
+    "helpersText": "Click each question to learn more from this team member.",
+    "helpers": [
+      {
+        "helper": "Susan - Merchant",
+        "image": "promo_person0.png",
+        "alts": [
+          {
+            "question": "How strong is this brand’s sales?",
+            "answer": "This designer always sells, but you’ve got to pay attention to the season."
+          },
+          {
+            "question": "What is the suggested retail price?",
+            "answer": "Fast-Line suits cost to us is $35, but we’re aiming for a profit of $45. Therefore, the price is $80.00. It’s going to be a top competing suit in this price market!"
+          },
+          {
+            "question": "What kind of promotional discount rate would be acceptable?",
+            "answer": "We definitely want to promote a discount that will convince a mid-range shopper to buy this suit, but I’m uncomfortable knocking the $80.00 price tag too low."
+          }
+        ]
+      },
+      {
+        "helper": "Pete - District Store Manager",
+        "image": "promo_person1.png",
+        "alts": [
+          {
+            "question": "How have one-piece women’s bathing suits sold in your stores in the past?",
+            "answer": "They never used to move very quickly and we would mark them down, but last year they seemed to gain consumer interest."
+          },
+          {
+            "question": "Are bathing suits popular in your stores?",
+            "answer": "Yes! Some of my stores in more affluent areas do really well with high-end fashion lines for women. Also, we tend to stock certain brands and prices. If it’s not at least an $80 suit, our customers may turn up their noses. Those in mid-range areas also do well with women’s bathing suits if there is an attractive discount."
+          },
+          {
+            "question": "How much inventory for a bathing suit do your stores usually carry?",
+            "answer": "It all depends, you know? If there’s a promising promotion for a suit that should be popular, we typically keep extra inventory, but not so much that we overstock valuable storage space."
+          }
+        ]
+      },
+      {
+        "helper": "Kathleen - Marketing Specialist",
+        "image": "promo_person2.png",
+        "alts": [
+          {
+            "question": "To which target customers would Fine-Line be marketed?",
+            "answer": "Probably middle-range shoppers. Women who are willing to spend some money on a nice suit, but don’t want to break the bank. Fine-Line probably won’t compete with the hottest lines out there, but it should be a value over lower priced suits."
+          },
+          {
+            "question": "What color of bathing suits tend to be popular?",
+            "answer": "Pastels are in: blue, green, and yellow. But this is important: black suits are always in. Red was the “it” color, but that was last year."
+          },
+          {
+            "question": "Should we order a large amount of suits?",
+            "answer": "I’m not sure we should. We expect Fine-Line to be a top-seller, but it is new. I’m not sure the buzz is quite there yet for that strategy."
+          }
+        ]
+      },
+      {
+        "helper": "Angelo - Merchant",
+        "image": "promo_person3.png",
+        "alts": [
+          {
+            "question": "How do we compare to the competition?",
+            "answer": "I think we’re ahead of the curve in seeing that one-piece suits will be in this year. Our competition may come from two-piece and other suits if customers don’t catch on to which style is in. Marketing these is important."
+          },
+          {
+            "question": "When is the optimal time to bring the items into the stores?",
+            "answer": "Hmm. That’s a good question, and a tough one to answer. Consider when consumers would use the item and when they are most likely to buy it."
+          },
+          {
+            "question": "Is there anything we’re concerned about with this product?",
+            "answer": "Personally, I think we would go wrong if we discount it too much. But, providing too little of a discount wouldn’t attract our core consumer."
+          }
+        ]
+      }
+    ],
+    "gauges": [
+      {
+        "title": "Promotion?",
+        "values": ["0%", "10%", "20%", "30%", "40%", "50%", "60%"],
+        "images": ["", "", "", "", "", "", ""],
+        "feedback": [
+          "The list price for the suit was $80. Discounting the product by 0% means they each sold for $80. Since the cost was $35, our profit ended up being $45.<br><br>This promotion value kept the price of Fine-Line close to the designer’s retail value. However, a promotion this small did not appeal to customers and inventory did not move, creating leftover inventory. Choose another percentage.",
+          "The list price for the suit was $80. Discounting the product by 10% means they each sold for $72. Since the cost was $35, our profit ended up being $37.<br><br>This promotion value kept the price of Fine-Line close to the designer’s retail value. However, a promotion this small did not appeal to customers and inventory did not move, creating leftover inventory. Choose another percentage.",
+          "The list price for the suit was $80. Discounting the product by 20% means they each sold for $64. Since the cost was $35, our profit ended up being $29.<br><br>Great choice! This promotion value demonstrates that Fine-Line is a highly-sought after swimsuit while drawing customers to a modest savings as it hits the market.",
+          "The list price for the suit was $80. Discounting the product by 30% means they each sold for $56. Since the cost was $35, our profit ended up being $21.<br><br>Great choice! This promotion value demonstrates that Fine-Line is a highly-sought after swimsuit while drawing customers to a modest savings as it hits the market.",
+          "The list price for the suit was $80. Discounting the product by 40% means they each sold for $48. Since the cost was $35, our profit ended up being $13.<br><br>At this promotional value, customers saw Fine-Line as a valuable deal. Inventory moved quickly—perhaps more quickly than you may have liked—as getting new product to stores in a timely manner became difficult. Choose another percentage.",
+          "The list price for the suit was $80. Discounting the product by 50% means they each sold for $40. Since the cost was $35, our profit ended up being $5.<br><br>At this promotional rate, Fine-Line flew off the shelves for a significantly reduced price. While inventory moved quickly, other suits failed to sell. Perhaps a lower promotional discount would generate more sales without jeopardizing profit on other swimsuits.",
+          "The list price for the suit was $80. Discounting the product by 60% means they each sold for $32. Since the cost was $35, our profit ended up being <span style=\"color:red;\">$-3</span>.<br><br>Promoting Fine-Line at a low promotional rate moved inventory faster than it could be replenished and did not bring in profit because you sold it for less than your original cost. Choose another percentage."
+        ]
+      },
+      {
+        "title": "When?",
+        "values": ["January", "March", "June", "September"],
+        "images": ["promo_winter.png", "promo_spring.png", "promo_summer.png", "promo_fall.png"],
+        "feedback": [
+          "Oops! It seems that the season for promoting bathing suits really is Summer. Promoting Fine-Line before the warmer months was not the best planning. Choose a different month.",
+          "Great choice! Shipping Fine-Line to stores in anticipation of the summer season resulted in selling the most inventory.",
+          "Good choice! Shipping Fine-Line to stores during the summer season resulted in selling a decent amount of inventory. Research into the expected popularity of Fine-Line paid off.",
+          "Oops! It seems that the season for promoting bathing suits really is Summer. Unfortunately, even with the promotion, Fine-Line did not perform well during the Fall/Winter season. Choose a different month."
+        ]
+      },
+      {
+        "title": "Where?",
+        "values": ["Upscale Retail", "Mid-Range Retail", "Outlet"],
+        "images": ["promo_building1.png", "promo_building2.png", "promo_building3.png"],
+        "feedback": [
+          "It looks like you may have guessed that Fine-Line would fare best in the highest-end clothing stores. However, the promotional price of Fine-Line was clearly below the price of other brands and designs. Also, customers questioned its quality. Shipping to upscale stores was not the best strategy. Choose another retail location.",
+          "Nice foresight! The promotional price for Fine-Line was competitive and attractive to customers, especially in stores that carry a range of both high-end and mid-range swimsuits.",
+          "Shipping to outlet stores was not the best choice. Fine-Line’s fashion forward style and price made it an outlier in these stores. Choose another retail location."
+        ]
+      },
+      {
+        "title": "How Many?",
+        "values": ["100 units", "600 units", "1000 units"],
+        "images": ["promo_truck1.png", "promo_truck2.png", "promo_truck3.png"],
+        "feedback": [
+          "Uh-oh. Fine-Line was a hot item, but stores only sold the amount that you shipped. You missed out on profits by shipping so few suits. Choose a different amount.",
+          "Great choice! The amount of suits that were shipped gave the store a good inventory. Fine-Line was as popular as expected, so the purchase rate was easy to track through the store and Store Managers knew when and how much restock to order.",
+          "Stores got a backlog of Fine-Line because there was not enough space for all of the units shipped. Customers overlooked the suits because there were just so many in store: “Why would they have piles of these suits? At the end of the season, stores had to significantly mark down the price in order to reduce the on-hand inventory. Choose a different amount."
+        ]
+      }
+    ]
+  },
+  "final": {
+    "title": "There’s a Lot to Planning",
+    "text": "<p>As you’ve seen, many different factors are used to make decisions in planning. Working on a plan involves research, collecting feedback, and making decisions throughout the pre-season and in-season lifecycles of a product. Most importantly, a planner must be willing to ask questions and consider alternatives if the plan isn’t meeting profitability expectations. Inventory planning is a real-world process, and many factors may influence profitability and success.<br><br>You can now exit the course or click the Back button to review.</p>"
+  },
+  "globalButtons": {
+    "backButton": "BACK",
+    "continueButton": "CONTINUE",
+    "retryButton": "RETRY",
+    "closeButton": "CLOSE",
+    "submitButton": "SUBMIT"
+  }
+}

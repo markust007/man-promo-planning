@@ -1,0 +1,6 @@
+@mixin background() {
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: $max-width;
+  background-color: $white;
+}
